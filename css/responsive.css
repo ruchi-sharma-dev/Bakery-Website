@@ -1,0 +1,690 @@
+
+@media (min-width: 0px) and (max-width: 992px) {
+  .top-section {
+    display: none;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    padding: 20px;
+    transition: 0.6s;
+  }
+
+  #togglebtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bg-overlay-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .done {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 992px) {
+  #togglebtn {
+    display: none;
+  }
+
+  .top-navbar {
+    position: fixed;
+    width: 100%;
+    height: 84px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .sticky .top-navbar {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .sticky nav {
+    max-width: 1300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2222;
+  }
+}
+
+/* mobile responsive */
+
+@media (min-width: 0px) and (max-width: 576px) {
+  .banner_content h1 {
+    font-size: 40px;
+  }
+
+  /* ABOUT SECTION START */
+
+  .about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+  }
+
+  .about_left {
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+
+  .about_right {
+    display: none;
+  }
+
+  /* ABOUT SECTION END */
+
+  /* MENU SECTION START */
+
+  /* .menu_page_section {
+    height: 3100px;
+  } */
+
+  .menu_container {
+    width: 100%;
+    /* height: 1700px; */
+    background-color: #f9f9ff;
+    margin-top: 50px;
+  }
+
+  .menu_heading {
+    width: 100%;
+  }
+
+  .menu_heading p {
+    font-size: 16px;
+  }
+
+  .menu_complete {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .menu_cards {
+    height: 300px;
+  }
+
+  .menu_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .menu_box img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .menu_name {
+    width: 100%;
+  }
+
+  .menu_name h4 {
+    font-size: 20px;
+  }
+
+  .menu_name p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* MENU SECTION END */
+
+  /* BRAND SECTION START */
+
+  .brand {
+    width: 100%;
+    margin-top: 20px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .brand_left {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .brand_right {
+    width: 100%;
+  }
+
+  .brand_right img {
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid red; */
+    margin-bottom: 50px;
+  }
+
+  /* BRAND SECTION END */
+
+  /* BLOG SECTION START */
+
+  .blog_section {
+    width: 100%;
+  }
+
+  .blog_complete {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .blog_cards {
+    width: 100%;
+  }
+
+  .blog_box img {
+    margin-left: -10px;
+  }
+
+  /* BLOG SECTION END */
+
+  /* FOOTER SECTION START */
+
+  .footer_section {
+    width: 100%;
+    background-color: #04091e;
+    /* margin-top: 50px; */
+    padding: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 300px; */
+  }
+
+  .footer_first_row {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .footer_first_row p {
+    font-size: 15px;
+  }
+
+  .footer_second_row {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .footer_second_row p {
+    font-size: 15px;
+  }
+
+  .footer_third_row {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .footer_third_row p {
+    font-size: 15px;
+  }
+
+  .copyright {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .copyright p {
+    line-height: 25px;
+  }
+
+  /* FOOTER SECTION END */
+
+  .contact_container {
+    /* height: 700px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 50px;
+    /* border: 2px solid black; */
+  }
+
+  .contact_first_col {
+    width: 100%;
+  }
+
+  .contact_icon {
+    width: 100%;
+  }
+
+  .contact_second_col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact_third_col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact_third_col textarea {
+    width: 100%;
+  }
+
+  .contact_btn {
+    /* margin-top: 100px; */
+    padding: 25px;
+  }
+
+  .inp input {
+    /* width: 100%; */
+    margin: auto;
+    margin-left: -10px;
+    margin-top: 10px;
+    border: 1px solid #999999;
+  }
+  textarea {
+    border: 1px solid #999999;
+  }
+
+  /* menu page start */
+
+  .content-box-left {
+    padding: 10px;
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+
+  .content-box-right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content-right-top {
+    gap: 80px;
+  }
+
+  .content-right-bottom {
+    gap: 80px;
+  }
+
+  .content-box {
+    gap: 50px;
+  }
+
+  /* team page start */
+
+  .team_container {
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+
+  .team_complete {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .team_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .team_cards {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .content-box-right{
+    margin-top: -50px;
+  }
+  /* team section end */
+}
+
+/* mobile responsive */
+
+/* TAB RESPONSIVE */
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .banner_content {
+    margin-top: 300px;
+  }
+  .banner_content h1 {
+    font-size: 40px;
+  }
+
+  /* about section responsive start */
+
+  .about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    padding: 10px;
+  }
+
+  .about_left {
+    width: 100%;
+    /* border: 2px solid red;
+         */
+  }
+
+  .about_right {
+    width: 30%;
+    display: block;
+    /* border: 2px solid yellow; */
+    margin-top: 300px;
+  }
+  /* about section responsive end */
+
+  /* menu section responsive start */
+
+
+  .menu_complete{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .menu_box{
+    width: 50%;
+  }
+
+  /* menu section responsive end */
+
+  /* BRAND SECTION START */
+
+  .brand {
+    width: 100%;
+    margin-top: 20px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .brand_left {
+    width: 95%;
+    padding: 40px;
+  }
+
+  .brand_left h1 {
+    width: 50%;
+  }
+  .brand_right {
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+
+  .brand_right img {
+    width: 95%;
+    height: 400px;
+    /* border: 2px solid rgb(163, 49, 208); */
+    margin-left: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  /* BRAND SECTION END */
+
+  /* slider section start */
+
+  .slider-section{
+    width: 100%;
+    height: 65vh;
+    /* border: 2px solid red; */
+
+  }
+
+  .slider-content h1{
+    margin-top: 30px;
+    /* border: 2px solid white; */
+  }
+
+  .slider-content>p{
+    margin-bottom: -80px;
+  }
+   .slider-box {
+    padding: 50px;
+   }
+
+  .slider-box p{
+    width: 300px;
+  }
+
+  /* slider section end */
+
+
+  /* blogs section start */
+  .blog_section{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .blog_complete{
+    width: 100%;
+    margin: auto;
+   
+  }
+
+  .blog_cards{
+    width: 33.33%;
+ 
+  }
+  .blog_box img{
+    width: 100%;
+    height: 150px;
+  }
+
+  .blog_lower_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right_blog_lower_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .blog_name{
+    width: 80%;
+    margin-left: 30px;
+  }
+
+   /* blogs section end */
+
+   /* footer section start */
+
+    .footer_section{
+        width: 100%;
+        margin-top: 80px;
+        /* border: 2px solid yellow; */
+    }
+
+   .footer{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px;
+    margin-top: 100px;
+    height: 40vh;
+   }
+
+
+   .footer_first_row{
+    width: 50%;
+   }
+
+   .footer_third_row{
+    width: 100%;
+    margin-top: 30px;
+   }
+
+   .copyright_section{
+    width: 100%;
+    /* border: 2px solid white; */
+    height: 200px;
+    padding: 40px;
+   }
+
+   /* footer section end */
+
+   /* menu page start */
+
+   .content-box{
+    max-width: 90%;
+    margin: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+   }
+
+   .content-box-left{
+    width: 100%;
+   }
+
+   .content-box-right{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+   }
+
+   .content-right-top{
+    margin-top: 20px;
+    display: flex;
+    gap: 200px;
+   }
+  
+   .content-right-bottom{
+    margin-top: 20px;
+    display: flex;
+    gap: 200px;
+   }
+  /* menu page end */
+
+  /* team page start */
+
+
+  .team_complete{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 20px;
+  }
+
+  .team_cards{
+    width: 48%;
+    /* border: 2px solid red; */
+  }
+  
+  .team_box img{
+    width: 100%;
+  }
+
+  /* team page end */
+
+  /* contact page start */
+
+  .contact_section{
+    width: 100%;
+    padding: 50px;
+    margin-top: 20px;
+  }
+
+  .contact_container{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact_first_col{
+    width: 100%;
+    /* border: 2px solid black; */
+  }
+
+  .contact_second_col{
+    width: 100%;
+    
+  }
+
+  .inp input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #999999;
+  }
+
+  .contact_third_col{
+    width: 100%;
+  }
+   textarea{
+    width: 100%;
+    border: 1px solid #999999;
+  }
+}
+
+
+
+/* TAB RESPONSIVE */
